@@ -2,22 +2,22 @@ Test.erb
 
 Test with variables passed to the template
 
-<% if @test_attr['test'] != nil %>
-	<%=@test_attr['test'] %>
+<% if @test_attr['testvar'] != nil %>
+	<%=@test_attr['testvar'] %>
 <%end%>
 
 
-<% if @test_attr['control'] != nil %>
-	<%=@test_attr['control'] %>
+<% if @test_attr['controlvar'] != nil %>
+	<%=@test_attr['controlvar'] %>
 <%end%>
 
 Test with node variables 
 
-<% if node['test_attr']['test'] != nil %>
-	<%=node['test_attr']['test']%>
+<% if node['test_attr']['testvar'] != nil %>
+	<%=node['test_attr']['testvar']%>
 <%end%>
 
 
-<% if node['test_attr']['control'] != nil %>
-	<%=node['test_attr']['control']%>
+<% if node['test_attr']['controlvar'] != nil %>
+	<%=node['test_attr']['controlvar']%>
 <%end%>
